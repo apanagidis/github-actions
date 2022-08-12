@@ -46,3 +46,19 @@ BASE_URL=http://localhost:8000 poetry run pytest tests/test_regression.py
 poetry run pytest tests/test_integration.py
 ```
 
+**Test URL urls**
+
+DEV
+```sh
+curl -XPOST https://thawing-tundra-53514.herokuapp.com/analyze -H "Content-Type: application/json" -d '{"text": "This is a test."}'
+```
+
+STAGING
+```sh
+curl -XPOST https://obscure-fjord-08660.herokuapp.com/analyze -H "Content-Type: application/json" -d '{"text": "This is a test."}'
+```
+
+PROD
+```sh
+curl -XPOST https://still-plains-30534.herokuapp.com/analyze -H "Content-Type: application/json" -d '{"text": "This is a test."}'
+```
