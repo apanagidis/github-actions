@@ -49,6 +49,8 @@ jobs:
       url: 'https://guarded-garden-94972.herokuapp.com/'
     steps:
       - uses: actions/checkout@v2
+      - name: Heroku Bug 
+      run: git push heroku HEAD:master
       - uses: akhileshns/heroku-deploy@v3.12.12 
         with:
           heroku_api_key: ${{secrets.HEROKU_API_KEY}}
