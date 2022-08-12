@@ -46,15 +46,14 @@ jobs:
     runs-on: ubuntu-latest
     environment: 
       name: Development
-      url: 'https://mighty-cliffs-69091.herokuapp.com/'
+      url: 'https://thawing-tundra-53514.herokuapp.com/'
     steps:
       - uses: actions/checkout@v2
       - uses: akhileshns/heroku-deploy@v3.12.12 
         with:
           heroku_api_key: ${{secrets.HEROKU_API_KEY}}
-          heroku_app_name: "mighty-cliffs-69091"
+          heroku_app_name: "thawing-tundra-53514"
           heroku_email: "adonis.cyp@gmail.com"
-          branch: main
 
   RegressionTests:
     name: Run regression tests
