@@ -77,7 +77,7 @@ jobs:
       - name: Install dependencies
         run: poetry install
       - name: Run regressions tests 
-        run: BASE_URL=https://guarded-garden-94972.herokuapp.com poetry run pytest tests/test_regression.py
+        run: BASE_URL=https://thawing-tundra-53514.herokuapp.com poetry run pytest tests/test_regression.py
     
   DeployStaging:
     name: Deploy to Staging 
