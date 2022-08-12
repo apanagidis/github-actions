@@ -54,6 +54,7 @@ jobs:
           heroku_api_key: ${{secrets.HEROKU_API_KEY}}
           heroku_app_name: "guarded-garden-94972"
           heroku_email: "adonis.cyp@gmail.com"
+          branch: main
 
   RegressionTests:
     name: Run regression tests
