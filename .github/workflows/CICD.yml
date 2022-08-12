@@ -46,7 +46,7 @@ jobs:
     runs-on: ubuntu-latest
     environment: 
       name: Development
-      url: 'https://guarded-garden-94972.herokuapp.com/'
+      url: 'https://mighty-cliffs-69091.herokuapp.com/'
     steps:
       - uses: actions/checkout@v2
       - name: Heroku Bug 
@@ -54,7 +54,7 @@ jobs:
       - uses: akhileshns/heroku-deploy@v3.12.12 
         with:
           heroku_api_key: ${{secrets.HEROKU_API_KEY}}
-          heroku_app_name: "guarded-garden-94972"
+          heroku_app_name: "mighty-cliffs-69091"
           heroku_email: "adonis.cyp@gmail.com"
           branch: main
 
